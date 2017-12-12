@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Support Page</title>
+        <link rel="stylesheet" href="support.css" type="text/css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script type="text/javascript" src="jquery-3.1.0.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="support.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="maindiv">
+            <H1> SUPPORT stránka pro migraci kontaktního centra </H1>
+            
+            <div id="menu">
+                    <input id="inputname" maxlength="40" type="text" name="Zadej své jméno" size="40" required> Zadej své jméno
+                    <br><br>
+                     <select id="select_topic"></select>
+                     <input id="finished" type="checkbox" name="finished" value="finished">Zobrazit ukončená vlákna
+                     <br><br>
+                     <input id="newvlakno" class="message" maxlength="80" type="text" name="Nadpis nového vlákna" size="80" required>
+                     <button id="pridejvlakno" onclick="simac.modules.support.addVlakno();">Přidat vlákno></button>
+                     <br><br>
+                       
+             </div>
+            
+            <div id="list_vlakno">
+                
+             </div>   
+            <div id="list_messages">
+                
+                </div>
+            
+            
+            
+            
+        </div>
+        
+        <script type="text/javascript">
+           simac.modules.support.init();
+          
+      </script>
+    </body>
+</html>
